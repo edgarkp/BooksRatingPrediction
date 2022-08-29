@@ -2,7 +2,8 @@
 This project contains implementation of a machine learning-based model used to predict books ratings. The implementation is preceeded by a dataset preparation, thorough Explanotory Data Analysis (EDA) and feature selection.
 
 ### The dataset
-![](readme-images/goodreads.png)
+
+![](readme-images/goodreads.PNG)
 
 The dataset provided is a curation of Goodreads books based on real user information. It is contained in a csv file called *books.csv* and gives the following book's attributes:
 1) *bookID:* A unique identification number for each book.
