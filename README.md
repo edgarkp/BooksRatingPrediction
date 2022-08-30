@@ -1,5 +1,5 @@
 # Implementation of book's rating prediction model
-This project contains implementation of a machine learning-based model used to predict books ratings. The implementation is preceeded by a dataset preparation, thorough Explanotory Data Analysis (EDA) and feature selection.
+This project contains implementation of a machine learning-based model used to predict books ratings. The implementation is preceeded by a dataset preparation, thorough Explanatory Data Analysis (EDA) and feature selection.
 
 ### The dataset
 
