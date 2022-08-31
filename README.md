@@ -35,8 +35,13 @@ I propose two approaches to the machine learning:
 * A classification approach that allows to predict if a book will have good ratings (average rating between 3 and 4 stars) or high ratings (average rating above 4 stars)
 
 ### To run the project
-* Create an environment from the requirements.txt file 
+* Create an environment from the requirements.txt file with the following command :   
+
+    conda create --name *environment_name* --file *file_name*
+
+    **NB:** The requirements file surely works on Windows. For Linux, no test was made. In any worst case, install all the necessary packages
 * Run the notebook *Books rating prediction*
+
 
 ### Closing
 Feel free to comment and add any constructive critics that could help me better my solution :) 
