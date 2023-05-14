@@ -1,17 +1,14 @@
 import joblib
 import streamlit as st
 import csv
+import sklearn 
 
 # Identify the different projects and add the module folder to the system path
-import sys
 import os
 
 project_path = os.getcwd()
-#data_output_path = project_path+"\\data\\outputs"
-#module_path = project_path+"\\modules"
-
-#if data_output_path not in sys.path:
-#    sys.path.append(data_output_path)
+data_output_path = project_path+"/data/outputs"
+model_path = project_path+"/src"
     
 # Import the created functions
 from modules.eda_fcns import get_num_occ_genre, is_top_genre, get_num_occ_authors, get_num_occ_title
@@ -22,9 +19,6 @@ list_authors = []
 list_top_genre = []
 list_titles = []
 
-project_path = os.getcwd()
-data_output_path = project_path+"/data/outputs"
-model_path = project_path+"/src"
 
 #with open('.\data\outputs\list_genres.csv', encoding='utf-8', newline='') as inputfile:
 with open(data_output_path+'/list_genres.csv', encoding='utf-8', newline='') as inputfile:
