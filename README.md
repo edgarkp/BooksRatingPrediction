@@ -3,7 +3,7 @@ This project contains implementation of a machine learning-based model used to p
 
 ### The dataset
 
-![](images/goodreads.PNG)
+![](readme-images/goodreads.PNG)
 
 The dataset provided is a curation of Goodreads books based on real user information. It is contained in a csv file called *books.csv* and gives the following book's attributes:
 1) *bookID:* A unique identification number for each book.
@@ -45,7 +45,7 @@ I propose two approaches to the machine learning:
 * Run the notebook *Books rating prediction-4-app* in the EDA folder
 
 #### 2 - To run the app on a local server
-* Use the following command on your cmd: *streamlit run web_app.py*
+* Use the following command in the **src folder**: *streamlit run web_app.py_local*
 
 ### Closing
 Feel free to comment and add any constructive critics that could help me better my solution :) 
