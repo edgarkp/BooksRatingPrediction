@@ -2,8 +2,6 @@ import joblib
 import streamlit as st
 import csv
 import sklearn 
-
-# Identify the different projects and add the module folder to the system path
 import os
 
 project_path = os.getcwd()
