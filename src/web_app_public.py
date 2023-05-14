@@ -24,8 +24,7 @@ list_titles = []
 
 project_path = os.getcwd()
 data_output_path = project_path+"/data/outputs"
-print(project_path)
-print(data_output_path)
+model_path = project_path+"/src"
 
 #with open('.\data\outputs\list_genres.csv', encoding='utf-8', newline='') as inputfile:
 with open(data_output_path+'/list_genres.csv', encoding='utf-8', newline='') as inputfile:
@@ -47,7 +46,7 @@ with open(data_output_path+'/list_titles.csv', encoding='utf-8', newline='') as 
     for row in csv.reader(inputfile):
         list_titles.append(row[0])
         
-model = joblib.load('model.bin') # run the model as a pipeline
+model = joblib.load(model_path +'/model.bin') # run the model as a pipeline
 
 # GUI interface
 def web_app():
