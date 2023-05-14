@@ -18,22 +18,18 @@ list_top_genre = []
 list_titles = []
 
 
-#with open('.\data\outputs\list_genres.csv', encoding='utf-8', newline='') as inputfile:
 with open(data_output_path+'/list_genres.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_genres.append(row[0])
 
-#with open('.\data\outputs\list_authors.csv', encoding='utf-8', newline='') as inputfile:
 with open(data_output_path+'/list_authors.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_authors.append(row[0])
 
-#with open('.\data\outputs\list_top_genre.csv', encoding='utf-8', newline='') as inputfile:
 with open(data_output_path+'/list_top_genre.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_top_genre.append(row[0])
 
-#with open('.\data\outputs\list_titles.csv', encoding='utf-8', newline='') as inputfile:
 with open(data_output_path+'/list_titles.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_titles.append(row[0])

@@ -1,21 +1,11 @@
 import joblib
 import streamlit as st
 import csv
-
-# Identify the different projects and add the module folder to the system path
 import sys
 import os
-
-
-project_path = os.getcwd()
-data_output_path = project_path+"\\data\\outputs"
-module_path = project_path+"\\modules"
-
-if module_path not in sys.path:
-    sys.path.append(module_path)
     
 # Import the created functions
-from eda_fcns import get_num_occ_genre, is_top_genre, get_num_occ_authors, get_num_occ_title
+from modules.eda_fcns import get_num_occ_genre, is_top_genre, get_num_occ_authors, get_num_occ_title
 
 # Import the necessary data for preprocessing 
 list_genres = []
@@ -23,19 +13,19 @@ list_authors = []
 list_top_genre = []
 list_titles = []
 
-with open(data_output_path+'\\list_genres.csv', encoding='utf-8', newline='') as inputfile:
+with open('../data/outputs/list_genres.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_genres.append(row[0])
         
-with open(data_output_path+'\\list_authors.csv', encoding='utf-8', newline='') as inputfile:
+with open('../data/outputs/list_authors.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_authors.append(row[0])
         
-with open(data_output_path+'\\list_top_genre.csv', encoding='utf-8', newline='') as inputfile:
+with open('../data/outputs/list_top_genre.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_top_genre.append(row[0])
         
-with open(data_output_path+'\\list_titles.csv', encoding='utf-8', newline='') as inputfile:
+with open('../data/outputs/list_titles.csv', encoding='utf-8', newline='') as inputfile:
     for row in csv.reader(inputfile):
         list_titles.append(row[0])
         
